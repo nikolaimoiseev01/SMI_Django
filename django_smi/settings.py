@@ -113,7 +113,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'smi_db',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'megaparol232',
         'HOST': 'localhost',
         'PORT': '',
     }
