@@ -97,12 +97,23 @@ WSGI_APPLICATION = "django_smi.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'smi_db',
+#         'USER': 'postgres',
+#         'PASSWORD': 'admin',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'smi_db',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
+        'USER': 'admin',
+        'PASSWORD': 'megaparol232',
         'HOST': 'localhost',
         'PORT': '',
     }
