@@ -112,7 +112,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'smi_db',
-        'USER': 'admin',
+        'USER': 'postgres',
         'PASSWORD': 'megaparol232',
         'HOST': 'localhost',
         'PORT': '',
