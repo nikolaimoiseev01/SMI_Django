@@ -12,6 +12,10 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 from pathlib import Path
 
+# to correct work with encoding = UTF-8
+import _locale
+_locale._getdefaultlocale = (lambda *args: ['en_US', 'utf8'])
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 from unfold.contrib.forms.widgets import WysiwygWidget
 
@@ -29,7 +33,7 @@ DEBUG = True
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-ALLOWED_HOSTS = ['89.108.99.97']
+ALLOWED_HOSTS = ['89.108.99.97', '127.0.0.1']
 
 # Application definition
 
@@ -113,7 +117,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'smi_db',
         'USER': 'postgres',
-        'PASSWORD': 'megaparol232',
+        'PASSWORD': 'admin',
         'HOST': 'localhost',
         'PORT': '',
     }
