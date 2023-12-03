@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "SMI_backend"
+version = "0.1.0"
+description = "Smi backend django"
+authors = ["bluzer <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django4django = "^0.0.2"
+django = "4.2.4"
+django-cors-headers = "^4.3.1"
+django-unfold = "^0.17.1"
+django-filter = "^23.4"
+pillow = "^10.1.0"
+psycopg2 = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
